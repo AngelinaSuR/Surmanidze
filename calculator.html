@@ -1,0 +1,77 @@
+<!-- Сайт розроблено студентом Сурманідзе Ангеліна, група ФГРБТ-4-9 -->
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurmaStudio - Калькулятор</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">SurmaStudio</a>
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a class="active" href="calculator.html">Калькулятор</a>
+        <a href="programs.html">Програми</a>
+        <a href="services.html">Сервіси</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container two-col">
+      <section class="card">
+        <h1>Калькулятор бізнес-кредиту</h1>
+        <p class="lead">Введіть параметри та отримайте щомісячний платіж, суму повернення і переплату.</p>
+        <form id="creditForm" novalidate>
+          <div class="row">
+            <label for="amount">Сума, грн <span class="hint" id="amountHint"></span></label>
+            <input class="field" id="amount" type="number" value="600000" min="10000" step="1000">
+            <input id="amountRange" type="range" value="600000" min="10000" max="5000000" step="10000">
+          </div>
+          <div class="row">
+            <label for="months">Термін, міс <span class="hint" id="monthsHint"></span></label>
+            <input class="field" id="months" type="number" value="36" min="3" max="120">
+            <input id="monthsRange" type="range" value="36" min="3" max="120">
+          </div>
+          <div class="row">
+            <label for="rate">Ставка, % <span class="hint" id="rateHint"></span></label>
+            <input class="field" id="rate" type="number" value="18.2" min="0.1" max="80" step="0.1">
+            <input id="rateRange" type="range" value="18.2" min="0.1" max="80" step="0.1">
+          </div>
+        </form>
+      </section>
+
+      <aside class="card">
+        <h2>Результат розрахунку</h2>
+        <div class="result-list">
+          <div class="result-item main">
+            <span>Щомісячний платіж</span>
+            <b id="monthlyPayment">0 грн</b>
+          </div>
+          <div class="result-item">
+            <span>Загальна сума повернення</span>
+            <b id="totalPayment">0 грн</b>
+          </div>
+          <div class="result-item">
+            <span>Переплата</span>
+            <b id="overpayment">0 грн</b>
+          </div>
+        </div>
+        <p class="lead">Розрахунок демонстраційний. Банківські комісії можуть впливати на фінальну вартість.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Виконавець: Сурманідзе Ангеліна</span>
+      <span>Група: ФГРБТ-4-9</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

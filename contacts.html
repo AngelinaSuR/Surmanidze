@@ -1,0 +1,53 @@
+<!-- Сайт розроблено студентом Сурманідзе Ангеліна, група ФГРБТ-4-9 -->
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurmaStudio - Контакти</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">SurmaStudio</a>
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="calculator.html">Калькулятор</a>
+        <a href="programs.html">Програми</a>
+        <a href="services.html">Сервіси</a>
+        <a class="active" href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container two-col">
+      <section class="card">
+        <h1>Контакти та попередня оцінка</h1>
+        <p class="lead">Телефон: +38 (067) 123-45-67<br>Email: office@finbridge.ua<br>Адреса: м. Київ, вул. Ділова, 14</p>
+        <p class="lead">Ця сторінка демонструє інтерактивність без серверної частини: нижче працює оцінка кредитної готовності.</p>
+      </section>
+
+      <section class="card" id="readinessForm">
+        <h2>Оцінка готовності до кредиту</h2>
+        <label for="rev">Місячна виручка, грн</label>
+        <input class="field" id="rev" type="number" value="450000" min="0" step="1000">
+        <label for="exp">Місячні витрати, грн</label>
+        <input class="field" id="exp" type="number" value="280000" min="0" step="1000">
+        <label for="existLoan">Поточні кредитні виплати, грн/міс</label>
+        <input class="field" id="existLoan" type="number" value="35000" min="0" step="500">
+        <p class="author-chip" id="readinessResult"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Виконавець: Сурманідзе Ангеліна</span>
+      <span>Група: ФГРБТ-4-9</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- Сайт розроблено студентом Сурманідзе Ангеліна, група ФГРБТ-4-9 -->
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurmaStudio - Кредитні програми</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">SurmaStudio</a>
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="calculator.html">Калькулятор</a>
+        <a class="active" href="programs.html">Програми</a>
+        <a href="services.html">Сервіси</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section" id="programsRoot">
+    <div class="container two-col">
+      <section class="card">
+        <h1>Підбір кредитної програми</h1>
+        <p class="lead">Фільтр працює локально на JavaScript: введіть потребу бізнесу та отримайте доступні програми.</p>
+        <label for="amountNeed">Потрібна сума, грн</label>
+        <input class="field" id="amountNeed" type="number" value="800000" min="100000" step="50000">
+        <label for="termNeed">Бажаний термін, міс</label>
+        <input class="field" id="termNeed" type="number" value="24" min="6" max="60">
+      </section>
+
+      <section class="card">
+        <h2>Доступні програми</h2>
+        <div id="programList" class="list"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Виконавець: Сурманідзе Ангеліна</span>
+      <span>Група: ФГРБТ-4-9</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

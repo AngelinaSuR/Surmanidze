@@ -1,0 +1,63 @@
+<!-- Сайт розроблено студентом Сурманідзе Ангеліна, група ФГРБТ-4-9 -->
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurmaStudio - Сервіси</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">SurmaStudio</a>
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="calculator.html">Калькулятор</a>
+        <a href="programs.html">Програми</a>
+        <a class="active" href="services.html">Сервіси</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container two-col">
+      <section class="card" data-tabs>
+        <h1>Сервіси для підготовки до кредиту</h1>
+        <div class="tabs">
+          <button class="tab-btn active" data-target="tab-1" type="button">Фінансовий аудит</button>
+          <button class="tab-btn" data-target="tab-2" type="button">Юридичний блок</button>
+          <button class="tab-btn" data-target="tab-3" type="button">Бізнес-план</button>
+        </div>
+        <article class="tab-pane active" id="tab-1">
+          <p>Аналізуємо P&L, cashflow і структуру витрат для кращого кредитного рейтингу.</p>
+        </article>
+        <article class="tab-pane" id="tab-2">
+          <p>Перевіряємо договори, контрагентів і ризики, що впливають на рішення банку.</p>
+        </article>
+        <article class="tab-pane" id="tab-3">
+          <p>Готуємо фінансову модель і сценарії повернення кредиту для кредитного комітету.</p>
+        </article>
+      </section>
+
+      <section class="card" id="serviceCalc">
+        <h2>Калькулятор пакету послуг</h2>
+        <label><input type="checkbox" value="7000"> Фінансовий аудит (7 000 грн)</label><br>
+        <label><input type="checkbox" value="5000"> Юридична перевірка (5 000 грн)</label><br>
+        <label><input type="checkbox" value="9000"> Бізнес-план + презентація (9 000 грн)</label><br>
+        <label><input type="checkbox" value="3500"> Супровід заявки (3 500 грн)</label>
+        <p class="author-chip">Разом: <strong id="serviceTotal">0 грн</strong></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Виконавець: Сурманідзе Ангеліна</span>
+      <span>Група: ФГРБТ-4-9</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
